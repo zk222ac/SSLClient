@@ -83,6 +83,7 @@ namespace SSLClient
 
         private static bool ValidateServerCertificate(object sender, X509Certificate serverCertificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
         {
+
             Console.WriteLine("Client Sender: " + sender);
             Console.WriteLine("Client server certificate : " + serverCertificate);
             Console.WriteLine("Client Policy errors: " + sslPolicyErrors);
